@@ -12,13 +12,16 @@
 
         @livewireStyles
 
+        {{-- CDN alpine js --}}
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body class="antialiased">
         <main class="bg-zinc-800 h-screen w-full flex">
             <div class="h-full w-full basis-[30%] border-r border-zinc-600">
-                <header class="py-3 px-5 flex items-center justify-between h-26 bg-slate-700">
+                <header class="py-3 px-5 flex items-center justify-between h-26 ">
                     <div class="w-8 h-8 rounded-full bg-white">
                         <img src="#" alt="" class="w-full h-full object-cover rounded-full">
                     </div>
@@ -37,6 +40,7 @@
                         </svg>
                     </div>
                 </header>
+                <livewire:search />
             </div>
         </main>
 
