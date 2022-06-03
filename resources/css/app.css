@@ -1,3 +1,43 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+    .card {
+        @apply flex w-full items-center gap-4 px-4 hover:bg-zinc-800 cursor-pointer;
+    }
+    .card__img {
+        @apply w-12 rounded-full bg-white my-3 basis-16;
+    }
+    .card__img > img {
+        @apply w-full h-full rounded-full object-cover;
+    }
+    .card__content {
+        @apply py-3 border-t border-zinc-500 w-full;
+    }
+    .card__content__head {
+        @apply flex items-center justify-between;
+    }
+    .card__content__head > h1 {
+        @apply text-white text-xl;
+    }
+    .card__content__body {
+        @apply flex items-center justify-between;
+    }
+    .card__content__body__tools {
+        @apply flex items-center space-x-1 translate-x-4 transition-transform;
+    }
+    .card__content__body__tools > #card_menu {
+        @apply scale-x-0 opacity-0;
+    }
+
+    .card:nth-child(1) > .card__content {
+        @apply border-none;
+    }
+    .card:hover .card__content__body__tools {
+        @apply translate-x-0;
+    }
+    .card:hover .card__content__body__tools > #card_menu {
+        @apply opacity-100 scale-x-100;
+    }
+}

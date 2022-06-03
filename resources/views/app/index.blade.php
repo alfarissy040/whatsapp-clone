@@ -21,7 +21,7 @@
     <body class="antialiased">
         <main class="bg-zinc-800 h-screen w-full flex">
             <div class="h-full w-full basis-[30%] border-r border-zinc-600">
-                <header class="py-3 px-5 flex items-center justify-between h-26 ">
+                <header class="py-3 px-5 flex items-center justify-between ">
                     <div class="w-8 h-8 rounded-full bg-white">
                         <img src="#" alt="" class="w-full h-full object-cover rounded-full">
                     </div>
@@ -41,6 +41,20 @@
                     </div>
                 </header>
                 <livewire:search />
+                <div class="w-full h-[calc(100%-7rem)] bg-zinc-900 scrollbar-thin scrollbar-track-zinc-900 scrollbar-thumb-zinc-500 overflow-y-scroll">
+                    @for ($i = 0; $i < 5; $i++)
+                        <x-card
+                        :img="'https://source.unsplash.com/500x500/?sakura'"
+                        :title="'title'.$i+1"
+                        :excerpt="'lorem ipsum syalala'"
+                        :time="'Yesterday'"
+                        :unread="'3'"
+                        :mute="'false'"
+                        :status="'false'"
+                        :type="'chat'"
+                        />
+                    @endfor
+                </div>
             </div>
         </main>
 

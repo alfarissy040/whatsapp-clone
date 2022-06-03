@@ -1,5 +1,5 @@
 <div>
-    <section class="w-full bg-zinc-900 px-4 py-2 relative" x-data="{search: '', toggle: false}">
+    <section class="w-full bg-zinc-900 px-4 py-2 relative border-b border-zinc-500" x-data="{search: '', toggle: false}">
         <div class="w-fit h-fit text-zinc-400 absolute inset-y-5 inset-x-8 cursor-pointer" @click="toggle = !toggle">
             {{-- search show while toggle false--}}
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute inset-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
