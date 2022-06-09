@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class Search extends Component
 {
-    public $data_search;
+    public $data_search = [];
     public $search;
     // public $key = 0;
 
@@ -15,9 +15,8 @@ class Search extends Component
         return view('livewire.search');
     }
 
-    // public function cari()
-    // {
-    //     $this->data_search = $this->search;
-    //     $this->key++;
-    // }
+    public function cari()
+    {
+        $this->data_search = collect($this->search);
+    }
 }

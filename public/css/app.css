@@ -1046,6 +1046,10 @@ select {
   left: 2rem;
   right: 2rem;
 }
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
+}
 .left-0 {
   left: 0px;
 }
@@ -1058,11 +1062,17 @@ select {
 .top-0 {
   top: 0px;
 }
+.bottom-0 {
+  bottom: 0px;
+}
 .z-0 {
   z-index: 0;
 }
 .z-50 {
   z-index: 50;
+}
+.z-10 {
+  z-index: 10;
 }
 .col-span-6 {
   grid-column: span 6 / span 6;
@@ -1214,6 +1224,12 @@ select {
 .h-\[calc\(100\%-7rem\)\] {
   height: calc(100% - 7rem);
 }
+.h-\[calc\(100\%-6\.8rem\)\] {
+  height: calc(100% - 6.8rem);
+}
+.h-\[calc\(100\%-7\.1rem\)\] {
+  height: calc(100% - 7.1rem);
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1269,6 +1285,9 @@ select {
 }
 .w-\[55\%\] {
   width: 55%;
+}
+.w-\[30\%\] {
+  width: 30%;
 }
 .min-w-0 {
   min-width: 0px;
