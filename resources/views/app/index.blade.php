@@ -20,7 +20,7 @@
     </head>
     <body class="antialiased">
         <main class="bg-zinc-800 h-screen w-full flex">
-            <div class="h-full w-full basis-[30%] border-r border-zinc-600">
+            <div class="h-full w-full basis-[30%] border-r border-zinc-700">
                 <header class="py-3 px-5 flex items-center justify-between ">
                     <div class="w-8 h-8 rounded-full bg-white">
                         <img src="#" alt="" class="w-full h-full object-cover rounded-full">
@@ -49,8 +49,8 @@
                         :excerpt="'lorem ipsum syalala'"
                         :time="'Yesterday'"
                         :unread="'3'"
-                        :mute="'false'"
-                        :status="'false'"
+                        :mute="true"
+                        :status="false"
                         :type="'chat'"
                         />
                     @endfor

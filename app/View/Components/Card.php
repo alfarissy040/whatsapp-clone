@@ -26,7 +26,7 @@ class Card extends Component
         $this->excerpt = $excerpt;
         $this->time = $time;
         $this->unread = $unread;
-        $this->status = $mute;
+        $this->mute = $mute;
         $this->status = $status;
         $this->type = $type;
     }
