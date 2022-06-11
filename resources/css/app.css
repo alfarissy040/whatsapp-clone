@@ -7,10 +7,10 @@
         @apply flex w-full items-center gap-4 px-4 hover:bg-zinc-800 cursor-pointer;
     }
     .card__img {
-        @apply w-12 rounded-full bg-white my-3 basis-16;
+        @apply w-12 rounded-full bg-white my-3 basis-16 overflow-clip;
     }
     .card__img > img {
-        @apply w-full h-full rounded-full object-cover;
+        @apply w-full h-full object-cover;
     }
     .card__content {
         @apply py-3 border-t border-zinc-700 w-full;
