@@ -1070,6 +1070,18 @@ select {
   margin-left: auto;
   margin-right: auto;
 }
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-7 {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -1272,6 +1284,9 @@ select {
 .w-\[55\%\] {
   width: 55%;
 }
+.w-\[60\%\] {
+  width: 60%;
+}
 .min-w-0 {
   min-width: 0px;
 }
@@ -1298,6 +1313,9 @@ select {
 }
 .basis-\[30\%\] {
   flex-basis: 30%;
+}
+.basis-\[70\%\] {
+  flex-basis: 70%;
 }
 .origin-top-left {
   transform-origin: top left;
@@ -1396,6 +1414,17 @@ select {
 }
 .gap-1 {
   gap: 0.25rem;
+}
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.gap-y-2 {
+  row-gap: 0.5rem;
+}
+.gap-x-1 {
+  -moz-column-gap: 0.25rem;
+       column-gap: 0.25rem;
 }
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1524,6 +1553,14 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
+.border-zinc-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(113 113 122 / var(--tw-border-opacity));
+}
+.border-emerald-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(16 185 129 / var(--tw-border-opacity));
+}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1587,10 +1624,6 @@ select {
 .bg-emerald-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
-}
-.bg-orange-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 .bg-opacity-25 {
   --tw-bg-opacity: 0.25;
@@ -1773,6 +1806,9 @@ select {
 .font-semibold {
   font-weight: 600;
 }
+.font-light {
+  font-weight: 300;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -1787,6 +1823,12 @@ select {
 }
 .leading-4 {
   line-height: 1rem;
+}
+.leading-loose {
+  line-height: 2;
+}
+.leading-relaxed {
+  line-height: 1.625;
 }
 .tracking-widest {
   letter-spacing: 0.1em;
@@ -1885,6 +1927,14 @@ select {
 .text-zinc-800 {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity));
+}
+.text-zinc-100 {
+  --tw-text-opacity: 1;
+  color: rgb(244 244 245 / var(--tw-text-opacity));
+}
+.text-zinc-600 {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 91 / var(--tw-text-opacity));
 }
 .underline {
   -webkit-text-decoration-line: underline;
