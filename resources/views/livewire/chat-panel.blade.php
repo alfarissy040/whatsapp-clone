@@ -1,4 +1,4 @@
-<template class="w-full h-full relative" x-data x-teleport="body" x-show="$store.chatModal.modal">
+<div class="w-full h-full relative" x-data>
     <header class="py-2 px-5 flex items-center justify-between border-b border-emerald-500 fixed top-0 w-[70%] gap-x-4 bg-zinc-800">
         <div class="flex items-center gap-x-4 cursor-pointer w-full">
             {{-- img grup or contact --}}
@@ -7,9 +7,9 @@
             </div>
             <div class="flex flex-col">
                 {{-- contact/grup name --}}
-                <h1 class=" text-white">{{ $title }}</h1>
+                <h1 class=" text-white"  x-text="$store.chatPanel.chat.title"></h1>
                 {{-- status --}}
-                <small class="text-zinc-500 text sm">Online</small>
+                <small class="text-zinc-500 text-sm"  x-text="$store.chatPanel.chat.status"></small>
             </div>
         </div>
         {{-- tools --}}
@@ -135,4 +135,4 @@
             </svg>
         </button>
     </footer>
-</template>
+</div>

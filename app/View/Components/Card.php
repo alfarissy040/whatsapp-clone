@@ -1,8 +1,8 @@
 <?php
 
-namespace App\View\Components;
+namespace App\Http\Livewire;
 
-use Illuminate\View\Component;
+use Livewire\Component;
 
 class Card extends Component
 {
@@ -38,6 +38,14 @@ class Card extends Component
      */
     public function render()
     {
-        return view('components.card');
+        return view('components.card', [
+            'status' => $this->status,
+        ]);
+    }
+
+    public function readMsg()
+    {
+        $this->status = true;
+        dd($this->status);
     }
 }

@@ -5078,14 +5078,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+ // window.Alpine = Alpine;
 
-alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].store("chatModal", {
-  modal: false,
-  toggle: function toggle() {
-    this.modal = !this.modal;
+alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].store("chatPanel", {
+  on: false,
+  chat: {
+    title: "",
+    status: "",
+    messages: {}
+  },
+  chatOn: function chatOn(data) {
+    this.chat.title = data.title;
+    this.chat.status = data.status;
+    this.on = true;
   }
 });
-window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"];
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].start();
 
 /***/ }),

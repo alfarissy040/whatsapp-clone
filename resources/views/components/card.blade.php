@@ -1,4 +1,6 @@
-<div class="card" x-data @click="$store.chatModal.toggle()">
+<div class="card" 
+x-data 
+@click="$store.chatPanel.chatOn({ title: '{{ $title }}', status: '{{ $status ? 'Online' : 'last seen today at 5:19 PM' }}' })">
     <div class="card__img">
         <img src="{{ $img }}" alt="">
     </div>

@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class ChatPanel extends Component
 {
-    public $title;
+    public $title = '';
 
     public function render()
     {
