@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" x-data @click="$store.chatModal.toggle()">
     <div class="card__img">
         <img src="{{ $img }}" alt="">
     </div>
