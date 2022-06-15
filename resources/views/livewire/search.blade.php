@@ -45,7 +45,7 @@
             <div class="text-emerald-500 px-[5.25rem] py-5">
                 <h1>CHATS</h1>
             </div>
-            <x-card
+            {{-- <x-card
             :img="'https://source.unsplash.com/500x500/?sakura'"
             :title="$search"
             :excerpt="'lorem ipsum syalala'"
@@ -54,11 +54,11 @@
             :mute="false"
             :status="false"
             :type="'chat'"
-            />
+            /> --}}
             <div class="text-emerald-500 px-[5.25rem] py-5">
                 <h1>GROUPS</h1>
             </div>
-            <x-card
+            {{-- <x-card
             :img="'https://source.unsplash.com/500x500/?sakura'"
             :title="$search"
             :excerpt="''"
@@ -67,11 +67,11 @@
             :mute="true"
             :status="true"
             :type="'group'"
-            />
+            /> --}}
             <div class="text-emerald-500 px-[5.25rem] py-5">
                 <h1>CONTACTS</h1>
             </div>
-            <x-card
+            {{-- <x-card
             :img="'https://source.unsplash.com/500x500/?sakura'"
             :title="$search"
             :excerpt="'lorem ipsum syalala'"
@@ -80,11 +80,11 @@
             :mute="false"
             :status="true"
             :type="'contact'"
-            />
+            /> --}}
             <div class="text-emerald-500 px-[5.25rem] py-5">
                 <h1>MESSAGES</h1>
             </div>
-            <x-card
+            {{-- <x-card
             :img="'https://source.unsplash.com/500x500/?sakura'"
             :title="$search"
             :excerpt="'lorem ipsum syalala'"
@@ -93,7 +93,7 @@
             :mute="false"
             :status="true"
             :type="'message'"
-            />
+            /> --}}
         @empty
             
         @endforelse

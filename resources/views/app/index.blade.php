@@ -43,7 +43,7 @@
                 <livewire:search />
                 <div class="w-full h-[calc(100%-7.1rem)] bg-zinc-900 scrollbar-thin scrollbar-track-zinc-900 scrollbar-thumb-zinc-500 overflow-y-scroll">
                     @for ($i = 0; $i < 15; $i++)
-                        <x-card
+                        {{-- <x-card
                         :img="'https://source.unsplash.com/500x500/?sakura'"
                         :title="'title'.$i+1"
                         :excerpt="'lorem ipsum syalala'"
@@ -52,7 +52,7 @@
                         :mute="true"
                         :status="false"
                         :type="'chat'"
-                        />
+                        /> --}}
                     @endfor
                 </div>
             </div>
