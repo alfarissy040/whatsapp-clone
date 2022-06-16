@@ -4,6 +4,8 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
+use function Psy\debug;
+
 class Card extends Component
 {
     public $model = [

@@ -1,5 +1,5 @@
 <div class="w-full h-full relative" x-data>
-    <header class="py-2 px-5 flex items-center justify-between border-b border-emerald-500 fixed top-0 w-[70%] gap-x-4 bg-zinc-800">
+    <header class="py-2 px-5 flex items-center justify-between border-b border-emerald-500 fixed top-0 w-[70%] gap-x-4 bg-zinc-800 z-20">
         <div class="flex items-center gap-x-4 cursor-pointer w-full">
             {{-- img grup or contact --}}
             <div class="w-9 h-9 rounded-full bg-white overflow-clip">
@@ -7,9 +7,9 @@
             </div>
             <div class="flex flex-col">
                 {{-- contact/grup name --}}
-                <h1 class=" text-white"  x-text="$store.chatPanel.chat.title"></h1>
+                <h1 class=" text-white">online</h1>
                 {{-- status --}}
-                <small class="text-zinc-500 text-sm"  x-text="$store.chatPanel.chat.status"></small>
+                <small class="text-zinc-500 text-sm capitalize" x-text="$store.chatPanel.chat.status"></small>
             </div>
         </div>
         {{-- tools --}}
@@ -25,8 +25,60 @@
         </div>
 
     </header>
-    <div class="h-full overflow-y-scroll scrollbar-thin scrollbar-track-zinc-900 scrollbar-thumb-zinc-500"></div>
-    <footer class="w-[70%] flex items-center fixed bottom-0 bg-zinc-700 py-3 px-5 gap-x-4 text-zinc-400"
+    <div class="h-full w-full overflow-y-scroll scrollbar-thin scrollbar-track-zinc-900 scrollbar-thumb-zinc-500 px-[5.5rem] pt-[4.25rem] pb-[4.5rem] space-y-2"
+    style="background: url('https://source.unsplash.com/800x400/?cat'); background-size: cover;">
+        @for ($i = 0; $i < 22; $i++)
+            <div class="flex justify-end">
+                <div class="msg-me">
+                    {{-- taill --}}
+                    <div class="absolute top-0 -right-2">
+                        <svg viewBox="0 0 8 13" width="8" height="13" class="text-emerald-700">
+                            <path opacity=".13" d="M5.188 1H0v11.193l6.467-8.625C7.526 2.156 6.958 1 5.188 1z"></path><path fill="currentColor" d="M5.188 0H0v11.193l6.467-8.625C7.526 1.156 6.958 0 5.188 0z"></path>
+                        </svg>
+                    </div>
+                    {{-- msg --}}
+                    <div class="msg__message">
+                        lorem 1
+                    </div>
+                    {{-- time --}}
+                    <div class="msg__time">
+                        <small class="uppercase text-xs text-gray-400">07:30 PM</small>
+                    </div>
+                    {{-- menu --}}
+                    <div class="msg__tool bg-emerald-700 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="card_menu" class="h-7 w-7 cursor-pointer text-zinc-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-start">
+                <div class="msg-other">
+                    {{-- taill --}}
+                    <div class="absolute top-0 -left-2">
+                        <svg viewBox="0 0 8 13" width="8" height="13" class="text-zinc-700">
+                            <path opacity=".13" fill="#0000000" d="M1.533 3.568 8 12.193V1H2.812C1.042 1 .474 2.156 1.533 3.568z"></path><path fill="currentColor" d="M1.533 2.568 8 11.193V0H2.812C1.042 0 .474 1.156 1.533 2.568z"></path>
+                        </svg>
+                    </div>
+                    {{-- msg --}}
+                    <div class="msg__message">
+                        lorem 1
+                    </div>
+                    {{-- time --}}
+                    <div class="msg__time">
+                        <small class="uppercase text-xs text-gray-400">07:30 PM</small>
+                    </div>
+                    {{-- menu --}}
+                    <button class="msg__tool bg-zinc-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="card_menu" class="h-7 w-7 cursor-pointer text-zinc-400" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        @endfor
+    </div>
+    <footer class="w-[70%] flex items-center fixed bottom-0 right-0 bg-zinc-700 py-3 px-5 gap-x-4 text-zinc-400 z-20"
     x-data="{ emot:false, msg: '' }">
         {{-- tools --}}
         <div class="flex items-center gap-x-4">

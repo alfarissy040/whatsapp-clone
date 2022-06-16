@@ -40,4 +40,25 @@
     .card:hover .card__content__body__tools > #card_menu {
         @apply opacity-100 scale-x-100;
     }
+    .msg-me {
+        @apply bg-emerald-700 px-2.5 max-w-[40%] w-fit rounded-tl-md rounded-b-md rounded-tr-none text-white flex relative;
+    }
+    .msg-other {
+        @apply bg-zinc-700 px-2.5 max-w-[40%] w-fit rounded-tr-md rounded-tl-none rounded-b-md text-white flex relative;
+    }
+    .msg__message {
+        @apply py-2 mr-3;
+    }
+    .msg__time {
+        @apply h-full translate-y-4;
+    }
+    .msg__tool {
+        @apply absolute top-0 right-0 mx-3 my-2 hidden;
+    }
+    .msg-me:hover .msg__tool {
+        @apply block;
+    }
+    .msg-other:hover .msg__tool {
+        @apply block;
+    }
 }

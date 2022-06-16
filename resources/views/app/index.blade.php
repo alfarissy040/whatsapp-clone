@@ -50,7 +50,7 @@
                         :time="'Yesterday'"
                         :unread="'3'"
                         :mute="true"
-                        :status="false"
+                        :status="'online'"
                         :type="'chat'"
                         />
                     @endfor

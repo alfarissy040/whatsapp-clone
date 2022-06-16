@@ -5081,7 +5081,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
  // window.Alpine = Alpine;
 
 alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].store("chatPanel", {
-  on: false,
+  on: true,
   chat: {
     title: "",
     status: "",

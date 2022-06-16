@@ -4,7 +4,7 @@ import Alpine from "alpinejs";
 // window.Alpine = Alpine;
 
 Alpine.store("chatPanel", {
-    on: false,
+    on: true,
     chat: {
         title: "",
         status: "",
